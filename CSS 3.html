@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar with Different Border Styles</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS for navigation bar styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            border-right: 2px solid transparent; /* Default border style */
+            transition: border-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            border-color: #fff; /* Change border color on hover */
+        }
+
+        /* Different border styles for each navigation item */
+        .navbar .item1 a {
+            border-style: solid;
+        }
+
+        .navbar .item2 a {
+            border-style: dotted;
+        }
+
+        .navbar .item3 a {
+            border-style: dashed;
+        }
+
+        .navbar .item4 a {
+            border-style: double;
+        }
+
+        .navbar .item5 a {
+            border-style: groove;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="item1"><a href="#">Item 1</a></div>
+    <div class="item2"><a href="#">Item 2</a></div>
+    <div class="item3"><a href="#">Item 3</a></div>
+    <div class="item4"><a href="#">Item 4</a></div>
+    <div class="item5"><a href="#">Item 5</a></div>
+</div>
+
+</body>
+</html>

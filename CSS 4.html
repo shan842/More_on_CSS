@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image with Circular Border</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .container img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* Make the image circular */
+            overflow: hidden; /* Ensures content inside the border-radius is visible */
+        }
+
+        .caption {
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://via.placeholder.com/200" alt="Circular Image">
+    <div class="caption">
+        <h2>Beautiful Circular Image</h2>
+        <p>This is a placeholder image made circular using border-radius.</p>
+    </div>
+</div>
+
+</body>
+</html>
